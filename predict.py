@@ -66,5 +66,8 @@ class Predictor(BasePredictor):
         seed: int = Input(default=123),
         domain: str = Input(choices=['outdoor', 'indoor', 'object'], default="indoor"),
     ) -> List[Path]:
+        input_image = Image.open(input_image)
         depth, normal = depth_normal(input_image, denoising_steps, ensemble_size, processing_res, seed, domain, self.pipe)
-        return [Path(depth), Path(normal)]
+        depth.save("/content/depth.png")
+        normal.save("/content/normal.png")
+        return [Path("/content/depth.png"), Path("/content/normal.png")]
