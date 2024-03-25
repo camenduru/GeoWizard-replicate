@@ -15,6 +15,7 @@ https://arxiv.org/abs/2403.12013
 https://fuxiao0719.github.io/projects/geowizard/
 
 ### 🖼 Output
+![Screenshot 2024-03-26 004634](https://github.com/camenduru/GeoWizard-replicate/assets/54370274/54283fe5-9793-4b82-9caf-b0e40b0f50ae)
 
 ### 🏢 Sponsor
 https://replicate.com
